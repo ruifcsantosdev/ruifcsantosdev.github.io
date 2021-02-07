@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://kit.fontawesome.com/ff6f3be13f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap-grid.min.css" crossorigin="anonymous">
+    <title>Rui Santos - Software Developer</title>
+</head>
+<body>
+
+    <nav>
+        <div class="nav__main">
+            <div>
+                <h1 class="logo">Rui Santos</a>
+            </div>
+    
+            <ul id="nav__menu">
+                <li>
+                    <a href="#about-me" class="nav__item">About Me</a>
+                </li>
+                <li>
+                    <a href="#experience" class="nav__item">Experience</a>
+                </li>
+                <li>
+                    <a href="#projects" class="nav__item">Projects</a>
+                </li>
+            </ul>
+            <div id="nav-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <div id="deployable-menu" class="hide" >
+        <button onclick="closeDeployableMenu()">
+            <i class="fas fa-times"></i>
+        </button>
+          <ul >
+            <li><a href="#about-me" onclick="closeDeployableMenu()">About Me</a></li>
+            <li><a href="#experience" onclick="closeDeployableMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="closeDeployableMenu()">Projects</a></li>
+          </ul>
+    </div>
+
+    <header>
+        <div class="header__main">
+            <span>Hi 👋🏼, I'm Rui Santos</span>
+            <span>A software developer</span>
+        </div>
+    </header>
+
+    <main>
+        <section id="about-me">
+            <h2 class="title">About Me</h2>
+            <div class="section">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-6">
+                            <img class="responsive-image" src="/assets/images/me.jpeg" alt="">
+                            <div class="margin-top--mobile"></div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 text-gird">
+                            <p class="normal-text">RideCare takes advantage of  real-time classification algorithms, based on classic Machine Learning methods to detect anomalous situations inside shared vehicles.
+                                From labelled and unlabelled data, several algorithms from Supervised and Unsupervised Learning paradigms were tested and insights were taken during that extensive exploratory work. Our best algorithm achieved more than <b>97% accuracy</b> on all predictions made, for all scenarios considered*. Additionally, other supervised learning algorithms, which performed well during our research process, are hosted by a cloud application -AlertAI Cloud, allowing alternative predictions for the raw data collections.
+                                <br>*These results were obtained under controlled capture scenarios, taking into account real environments inside vehicles. </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="subtitle center" style="text-align: center;"><b>My current stack of languages/technologies is:</b></h3>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col center">
+                                <p class="current__stack">
+                                    JAVASCRIPT - NODEJS -  JAVA - REACTJS - VUEJS - VUETIFY
+                                </p>
+                                <div class="space"></div>
+                                <p class="current__stack">
+                                    C# - .NET CORE - ENTITY FRAMEWORK - DOCKER(AND DOCKER-COMPOSE)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space"></div>
+                    <div class="center">
+                        <button class="resume">
+                            <i class="fas fa-paper-plane"></i> Resume
+                        </button>
+                    </div>
+                    
+                </div>
+                <h3 class="subtitle">Academic</h3>
+                <div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-10">
+                                <p class="university"><i class="fas fa-university"></i> ISEC - Coimbra Institute of Engineering (2016 - 2019)</p>
+                                <p class="university-course">Graduation in Informatics Engineering</p>
+                                <p class="details"> - Application Development Branch</p>
+                            </div>
+                            <div class="col-12 col-md-2 center">
+                                <p class="university">GPA</p>
+                                <p class="university-course">13</p>
+                            </div>
+                        </div>
+                        <div class="space"></div>
+                        <div class="divider"></div>
+                        <div class="space"></div>  
+                    </div>
+                    
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-10">
+                                <p class="university"><i class="fas fa-university"></i> University of Minho (2019 - current)</p>
+                                <p class="university-course">Master's in Informatics Engineering</p>
+                                <p class="details"> - Knowledge Engineering Profile</p>
+                                <p class="details"> - Software Systems Engineering Profile</p>
+                                <p class="details"> - NoSQL Data Bases - Optional</p>
+                                <p class="details"> - Web Application Development - Optional</p>
+                            </div>
+                            <div class="col-12 col-md-2 center">
+                                <p class="university">GPA</p>
+                                <p class="university-course">16 (Current)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="subtitle">Other Courses</h3>
+                <div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <p class="university">React - The Complete Guide (incl Hooks, React Router, Redux)</p>
+                                <p class="university-course">Instructor: Maximilian Schwarzmüller | Professional Web Developer and Instructor</p>
+                                <p class="university-course"><i class="far fa-clock"></i> Duration 41h</p>
+                                <p class="university-course"><i class="far fa-window-maximize"></i> Udemy Platform</p>
+                            </div>
+                        </div>
+                        <div class="space"></div>
+                        <div class="divider"></div>
+                        <div class="space"></div>
+                        <div class="row">
+                            <div class="col">
+                                <p class="university">Apache Kafka Series - Learn Apache Kafka for Beginners v2</p>
+                                <p class="university-course">Instructor: Stephane Maarek | AWS Certified Solutions Architect & Developer Associate</p>
+                                <p class="university-course"><i class="far fa-clock"></i> Duration 7.5h</p>
+                                <p class="university-course"><i class="far fa-window-maximize"></i> Udemy Platform</p>
+                            </div>
+                        </div>
+                        <div class="space"></div>
+                        <div class="divider"></div>
+                        <div class="space"></div>
+                        <div class="row">
+                            <div class="col">
+                                <p class="university">The Complete Guide To Build Rest Api's with Asp.Net and C# </p>
+                                <p class="university-course">Instructor: Asfend Yar Hamid | Microsoft MVP</p>
+                                <p class="university-course"><i class="far fa-clock"></i> Duration 4h</p>
+                                <p class="university-course"><i class="far fa-window-maximize"></i> Udemy Platform</p>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section id="experience">
+            <h2 class="title">Experience</h2>
+            <div class="section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-10">
+                                <p class="university">Front-end Developer • Internship <span>ISEC</span> • YouShip</p>
+                                <p class="university-course"><i class="fas fa-map-marker-alt"></i> YouShip, Coimbra, Instituto Pedro Nunes</p>
+                                <p class="university-course"><i class="far fa-clock"></i> Duration: 02-2019 a 07-2019 (6 Months)</p>
+                                <p class="university-course">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat, ipsum esse magni, culpa totam dolor molestias ex soluta consequuntur vel maiores inventore blanditiis repellat illo, quasi doloribus! Porro, aut dolore!
+                                </p>
+                                <p class="tech__details">
+                                    REACTJS - VUEX - REACTSTRAP - CSS MODULES
+                                </p>
+                        </div>
+                        <div class="col-12 col-md-2 center">
+                            <p class="university">GPA</p>
+                            <p class="university-course">18</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects">
+            <h2 class="title">Projects</h2>
+            <div class="section">
+                <h3 class="subtitle">Academic Projects</h3>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-6 center">
+                            <p class="university">Condominium Management • Minho University • <span>Academic Project</span></p>
+                            <p class="university-course text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod commodi pariatur vel deleniti maxime. Dolorem eius adipisci dolore illo, inventore asperiores architecto, perspiciatis nemo sapiente sed iusto cum, molestias dolores!</p>
+                            <p class="tech__details">
+                                NODEJS - EXPRESS - TYPEORM - DOCKER - POSTGRES
+                            </p>
+                            <div>
+                                <button class="btn" onclick=" window.open('https://github.com/ruifcsantosdev/gestao-condominios','_blank')"><i class="fas fa-link"></i>Source Code</button>
+                                <button class="btn" onclick=" window.open('https://youtu.be/SzWdIDRvvU0','_blank')"><i class="fa fa-youtube"></i>Demo video</button>
+                            </div>
+                            <div class="margin-top--mobile"></div>
+                        </div>
+                        <div class="col-12 col-md-6 center">
+                            <img src="/assets/images/condominios.png" width="300"/>
+                        </div>
+                    </div>
+                    <div class="space"></div>
+                    <div class="divider"></div>
+                    <div class="space"></div>
+                    <div class="row row__even">
+                        <div class="col-12 col-md-6 center">
+                            <img src="/assets/images/ridecare.png" width="300"/>
+                        </div>
+                        <div class="col-12 col-md-6 center">
+                            <p class="university">RideCare • University of Minho and Bosch Braga</p>
+                            <p class="university-course text-center">
+                                RideCare you can monitor a car-sharing fleet in real-time and watch over occurred anomalies. Inside the web application, you have access to a dashboard in which you can check all the past anomalies and the corresponding evolution of the sensorial data before, during, and after its occurrence. Once an anomaly occurs, you will be notified and every information about it at your disposal.
+                            </p>
+                            <p class="tech__details">
+                                VUEJS - VUETIFY - DOCKER - WEBSOCKETS
+                            </p>
+                            <div>
+                                <button class="btn" onclick=" window.open('https://www.youtube.com/watch?v=7cVd6xf9Weg&ab_channel=LeandroCosta','_blank')"><i class="fa fa-youtube"></i>Demo video</button>
+                            </div>
+                            <div class="margin-top--mobile"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <h3 class="subtitle">Personal Projects</h3>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-6 center">
+                            <p class="university">Portfolio • Personal Project</p>
+                            <p class="university-course text-center">
+                                This very website you're now watching <span style="font-style: normal;">😅</span>!
+                            </p>
+                            <p class="tech__details">
+                                HTML - CSS - JAVASCRIPT - BOOTSTRAP GRID
+                            </p>
+                            <div>
+                                <button class="btn"><i class="fas fa-link"></i>Source Code</button>
+                            </div>
+                            <div class="margin-top--mobile"></div>
+                        </div>
+                        <div class="col-12 col-md-6 center">
+                            <img src="/assets/images/port.png" width="300"/>
+                        </div>
+                    </div>
+                </div>
+           
+                <h3 class="subtitle">Publications</h3>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <p class="university">Whitepaper • Using CRISP-DM with Acute Liver Failure in mind</p>
+                            <p class="university-course">
+                                "The healthcare sector is highly dependent on data analysis to help prevent the appearance of health complication and disease in people. Having the ability to process data and derive results and conclusions from analysis is a great tool to help in decision making of health specialists everywhere. With techniques and tools for Data Mining (...)"
+                            </p>    
+                        </div>
+                        <div class="col-12">
+                            <button class="btn" onclick=" window.open('./assets/pdfs/CRISP-DM.pdf','_blank')"><i class="far fa-bookmark"></i> Read More</button>
+                        </div>
+                    </div>
+                    <div class="space"></div>
+                    <div class="divider"></div>
+                    <div class="space"></div>
+                    <div class="row">
+                        <div class="col-12">
+                            <p class="university">Dissertation • Microservices Architecture with Apache Kafka in HealthCare</p>
+                            <p class="university-course"><i class="far fa-clock"></i> Duration: 2020 - 2021 (in Progress)</p>
+                            <p class="university-course">
+                                "In microservices architectures, there are several problems that can become complex, namely the issue of communication between the services of an application. There are several forms of communication, however, a bad approach can cause an application based on microservices to become a distributed monolithic solution, not enjoying the advantages  of said architecture.  Of all forms of communication, there is one that stxtands out, Messaging, which is based on messages exchanged through a Publisher and a Subscriber through a Message Broker. Apache Kafka is one of the most widely used Message Brokers. (...)"                           </p>    
+                        </div>
+                        <div class="col-12">
+                            <button class="btn" onclick=" window.open('./assets/pdfs/pré-dissertação_2890.pdf','_blank')"><i class="far fa-bookmark"></i> Read More</button>
+                        </div>
+                    </div>
+                    <div class="space"></div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <div>
+            <div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <span>ruifcsantosdev@outlook.com</span>
+                </div>
+                <div>
+                    <i class="fab fa-linkedin-in"></i>
+                    <span>ruifcsantos</span>
+                </div>
+                <div>
+                    <i class="fa fa-github"></i>
+                    <span>ruifcsantosdev</span>
+                </div>
+            </div>
+            <div>
+                <span>Designed and Created By Rui Santos</span>
+                <span>2021</span>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="index.js" charset="utf-8"></script>
+    <script>
+        $(document).ready(function () {
+            'use strict';
+            const navMenu = document.getElementById('nav-menu')
+            const deployableMenu = document.getElementById('deployable-menu')
+
+            if(navMenu) {
+                navMenu.addEventListener("click", () => {
+                    console.log("aqui");
+                    if (deployableMenu.classList.contains("hide")){
+                        deployableMenu.classList.remove("hide")
+                    }
+                })
+            }
+
+            const closeDeployableMenu = () => {
+                deployableMenu.classList.add("hide")
+                deployableMenu.classList.add("top-animation")
+            }
+            });
+    </script>
+</html>
