@@ -442,6 +442,12 @@ footer {
     justify-content: flex-end;
 }
 
+.footer__social-media {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
 @media screen and (max-width: 1350px) {
     #nav-menu {
         opacity: 0%;
@@ -477,6 +483,16 @@ footer {
 
     .row__even{
         flex-direction: column-reverse;
+    }
+    .icon-circle {
+        margin-bottom: 10px;
+    }
+
+    .footer__social-media  {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .footer__center-created {
