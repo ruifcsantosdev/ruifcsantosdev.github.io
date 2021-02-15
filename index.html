@@ -58,14 +58,29 @@
             <div class="section">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-12 col-sm-12 col-md-6">
-                            <img class="responsive-image" src="/assets/images/me.jpeg" alt="">
+                        <div class="col-12 col-sm-12 col-md-6 center">
+                            <img class="responsive-image center" src="/assets/images/me.jpeg" alt="">
                             <div class="margin-top--mobile"></div>
                         </div>
                         <div class="col-12 col-sm-12 col-md-6 text-gird">
-                            <p class="normal-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-
-                                The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+                            <p class="normal-text">
+                                Hello, my name is Rui Santos and I’m a Software Engineer. I joined ISEC in 2016 and finished my Informatics Engineering degree in 2019.after that I decided to follow further education and started the master in Informatics Engineering at University of Minho in Braga. I’m in the last year of the masters. I'm currently writing my thesis about Microservices Architectures and Apache Kafka. 
+                            </p>
+                            <p class="normal-text">
+                                During my degree and masters I’ve been involved in several projects (one of them involved Bosch Braga). I’ve also interned at a startup in Coimbra, YouShip. 
+                            </p>
+                            <p class="normal-text">
+                                Always keen to know more, especially about the latest trends in software development, I´ve done several online courses on the platform Udemy, to further increase my technical skills and knowledge. 
+                            </p>
+                            <p class="normal-text">
+                                Always keen to know more, especially about the latest trends in software development, I´ve done several online courses on the platform Udemy, to further increase my technical skills and knowledge. 
+                            </p>
+                            <p class="normal-text">
+                                I like to think of myself as a person with initiative, curious, funny, responsible and hard worker. 
+                            </p>
+                            <p class="normal-text">
+                                If you want to know more about me, feel free to explore this ePortfolio. 
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -87,10 +102,10 @@
                     <div class="space"></div>
                     <div>
                         <div style="display: flex; justify-content: center; align-items: center;">
-                            <button class="resume" style="margin-right: 10px;">
+                            <button class="resume" style="margin-right: 10px;" onclick=" window.open('./assets/pdfs/cv_en.pdf','_blank')">
                                 <i class="fas fa-paper-plane"></i> Resume (EN)
                             </button>
-                            <button class="resume">
+                            <button class="resume" onclick=" window.open('./assets/pdfs/cv_pt.pdf','_blank')">
                                 <i class="fas fa-paper-plane"></i> Resume (PT)
                             </button>
                         </div>
@@ -103,7 +118,7 @@
                         <div class="row">
                             <div class="col-12 col-md-10 ">
                                 <p class="university"><i class="fas fa-university"></i> ISEC - Coimbra Institute of Engineering (2016 - 2019)</p>
-                                <p class="university-course">Graduation in Informatics Engineering</p>
+                                <p class="university-course">Degree in Informatics Engineering</p>
                                 <p class="details"> - Application Development Branch</p>
                             </div>
                             <div class="col-12 col-md-2 center">
@@ -217,7 +232,8 @@
                                 <p class="university-course"><i class="fas fa-map-marker-alt"></i> YouShip, Coimbra, Instituto Pedro Nunes</p>
                                 <p class="university-course"><i class="far fa-clock"></i> Duration: 02-2019 a 07-2019 (6 Months)</p>
                                 <p class="university-course">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat, ipsum esse magni, culpa totam dolor molestias ex soluta consequuntur vel maiores inventore blanditiis repellat illo, quasi doloribus! Porro, aut dolore!
+                                    During this internship I had the opportunity to work in a startup, in the development of a web app in React with Redux, consuming the data with REST APIs.
+                                    I also had the opportunity to work in agile software management, using SCRUM. 
                                 </p>
                                 <p class="tech__details">
                                     REACTJS - VUEX - REACTSTRAP - CSS MODULES
@@ -241,8 +257,9 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-md-6 center">
-                            <p class="university">Condominium Management • Minho University • <span>Academic Project</span></p>
-                            <p class="university-course text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod commodi pariatur vel deleniti maxime. Dolorem eius adipisci dolore illo, inventore asperiores architecto, perspiciatis nemo sapiente sed iusto cum, molestias dolores!</p>
+                            <p class="university">Condominium Management • University of Minho</p>
+                            <p class="university-course text-center">
+                                In the informatic engineering lab course of the Masters I´m attending, its main project has as a goal to develop an app that facilitates condominium management. There was a need for collection of requirements ( functional and non functional), defining the stack that was going to be used, and developing a Backend App in Node JS and Express. Three students were in charge of the project. I took part in collecting the requirements, software architecture and backend app development.                             </p>
                             <p class="tech__details">
                                 NODEJS - EXPRESS - TYPEORM - DOCKER - POSTGRES
                             </p>
@@ -374,6 +391,16 @@
     <script>
         $(document).ready(function () {
             'use strict';
+            updateVisitCount();
+
+            function updateVisitCount(){
+                fetch('https://api.countapi.xyz/update/ruifcsantosdev/visitors/?amount=1')
+                    .then(res => res.json())
+                    .then(res => {
+                        countEl.innerHTML = res.value;
+                    })
+            }
+
             const navMenu = document.getElementById('nav-menu')
             const deployableMenu = document.getElementById('deployable-menu')
 
@@ -390,6 +417,6 @@
                 deployableMenu.classList.add("hide")
                 deployableMenu.classList.add("top-animation")
             }
-            });
+        });
     </script>
 </html>
